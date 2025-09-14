@@ -345,6 +345,8 @@ custom_bar_settings = [
         mouse_callbacks={"Button1": lazy.spawn("pamixer -t")},
     ),
     widget.PulseVolume(),
+    # If for some reason PulseVolume does not work, you can use the Volume widget instead
+    # widget.Volume(),
     # ---------------CPU------------------
     widget.Sep(linewidth=0, padding=15),
     widget.CPU(foreground=catppuccin["lavender"], format="CPU: {load_percent}%"),
