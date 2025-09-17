@@ -326,7 +326,9 @@ custom_bar_settings = [
         },
     ),
     widget.CheckUpdates(
-        distro="Arch_checkupdates",
+        # distro="Arch_checkupdates",
+        distro="Arch",
+        update_interval=180,
         display_format="{updates} Updates",
         colour_have_updates=catppuccin["text"],
         colour_no_updates=catppuccin["text"],
